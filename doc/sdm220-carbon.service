@@ -1,0 +1,11 @@
+[Unit]
+Description=SDM220-Carbon Daemon
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sdm220-carbon.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
